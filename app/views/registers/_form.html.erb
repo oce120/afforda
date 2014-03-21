@@ -1,0 +1,53 @@
+<%= form_for(@register) do |f| %>
+  <% if @register.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@register.errors.count, "error") %> prohibited this register from being saved:</h2>
+
+      <ul>
+      <% @register.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+	  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	   <script src="/assets/jquery.validate.js"></script>
+
+ <div class="row">
+       
+  <div class="col-lg-3"">
+    <%= f.text_field :storeName ,class:'form-control required', :placeholder=>"Store Name" %>
+  </div>
+  <div class="col-lg-3"">
+    <%= f.text_field :email ,class:'form-control required',:placeholder=>"Email"  %>
+  </div>
+  <div class="col-lg-3"">
+    <%= f.text_field :password, class:'form-control required',:placeholder=>"Password"  %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Try Afforda FREE ' , :class => 'btn btn-success'%>
+  </div>
+<% end %>
+ 	</div>    
+<div id="Signup" style="display:none;">
+	
+	<%= render 'signups/form' %>
+</div>
+
+<script text="javascript">
+	
+	 $(document).ready(function () {
+            
+            
+
+            $("a44").click(function (e) {
+                e.preventDefault();
+                $("#Signup").dialog();
+            });
+
+        });
+	
+</script>

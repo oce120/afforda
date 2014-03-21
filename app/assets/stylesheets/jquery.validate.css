@@ -1,0 +1,26 @@
+﻿.field-validation-error 
+{
+	color: 					#F00 /*{e-bar-color}*/;
+	text-shadow: 0 /*{e-bar-shadow-x}*/ 1px /*{e-bar-shadow-y}*/ 0 /*{e-bar-shadow-radius}*/ 	#fff /*{e-bar-shadow-color}*/;
+	padding: 8px 35px 8px 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    /*background-color: #CAF6FF !important;*/
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}

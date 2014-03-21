@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @signup.firstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @signup.lastName %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @signup.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @signup.city %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @signup.postcode %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @signup.country %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @signup.phone %>
+</p>
+
+<%= link_to 'Edit', edit_signup_path(@signup) %> |
+<%= link_to 'Back', signups_path %>
