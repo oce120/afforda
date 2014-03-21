@@ -26,3 +26,5 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+![Afforda Status](https://www.codeship.io/projects/71b85ad0-9351-0131-1cc0-36aa00e17550/status)
