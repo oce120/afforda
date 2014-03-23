@@ -2,6 +2,7 @@ TestRubyOnRails::Application.routes.draw do
   resources :students
 
   #get "home/index"
+  #get "home/login"
   resources :registers
 
   resources :signups

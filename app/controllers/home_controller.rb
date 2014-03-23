@@ -9,4 +9,9 @@ class HomeController < ApplicationController
     
     @signup = Signup.new
   end
+  
+   # GET /home/login
+  def login
+   @hometext ='hello world'
+  end
 end
